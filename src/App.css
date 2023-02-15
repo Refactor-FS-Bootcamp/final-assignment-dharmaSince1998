@@ -1,0 +1,22 @@
+.header {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 20px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}

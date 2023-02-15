@@ -1,0 +1,81 @@
+.randomContainer {
+  background-color: black;
+  height: 100vh;
+  margin: auto;
+  padding: 10px;
+  overflow-y: scroll;
+  position: relative;
+}
+.randomContainer > h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.randomShuffle {
+  max-width: 1200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+.randomShuffleBtn {
+  padding: 5px;
+  width: 50px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.randomBox {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.randomImage {
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.randomImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.randomImage img:hover {
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 800px) {
+  .randomBox {
+    gap: 10px;
+    justify-content: center;
+  }
+  .randomContainer {
+    overflow-y: scroll;
+  }
+
+  .randomImage {
+    border: 1px solid white;
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

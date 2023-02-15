@@ -1,0 +1,78 @@
+.breedContainer {
+  margin: auto;
+  align-items: center;
+  background-color: black;
+  border-top: 1px solid white;
+  min-height: 100vh;
+}
+
+.breedBox {
+  padding-top: 20px;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.breedHeader {
+  border-radius: 20px;
+  padding-left: 10px;
+  height: 50px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.breedDogs {
+  margin: auto;
+  border: 1px solid white;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 5px;
+  justify-content: center;
+  align-content: center;
+}
+
+.breedImage {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.breedImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  transition: 0.5s;
+}
+
+.breedImage img:hover {
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 750px) {
+  .breedDogs {
+    margin: auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .breedImage {
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+  }
+
+  .breedImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .breedHeader {
+    width: 400px;
+  }
+}
